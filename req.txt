@@ -4,3 +4,4 @@ ipykernel
 langchain_community
 faiss-cpu
 streamlit
+Ollama
