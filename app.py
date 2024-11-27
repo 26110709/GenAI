@@ -6,9 +6,10 @@ from langchain_core.prompts import ChatPromptTemplate
 load_dotenv()
 from langchain_core.output_parsers import StrOutputParser
 
-os.environ["langchain_api"] = os.getenv("langchain_api")
-os.environ["langchain_project"] = os.getenv("langchain_project")
-os.environ["LANGCHAIN_TRACING_V2"] = "true"
+os.environ["LANGCHAIN_API_KEY"] = os.getenv("LANGCHAIN_API_KEY")
+os.environ["LANGCHAIN_PROJECT"] = os.getenv("LANGCHAIN_PROJECT")
+LANGCHAIN_TRACING_V2="true"
+LANGCHAIN_ENDPOINT="https://api.smith.langchain.com"
 
 prompt = ChatPromptTemplate.from_messages(
     [
