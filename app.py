@@ -19,7 +19,7 @@ prompt = ChatPromptTemplate.from_messages(
 )
 
 st.title("Langchain demo with Llama3.1")
-input_text=st.text_input("How can I help you?")
+input_text=st.text_input("what can I do for you today?")
 
 llm = Ollama(model = "llama3.1")
 output_parser = StrOutputParser()
